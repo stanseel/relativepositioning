@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Breda - eerste les</title>
+
+    <!-- bootstrap 4 css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        h1{
+            margin-top:50px;
+            margin-bottom: 50px;
+        }
+        h4{
+            margin-bottom:25px;
+        }
+        .hoofdkolom{
+            padding:25px;
+        }
+        .genest{
+            padding:25px;
+            margin:15px;
+            color:white;
+        }
+        .kleurvlak{
+            background-color: #FF6F59;
+            width:50%;
+            height:250px;
+        }
+        .tekstvlak{
+            background-color: white;
+            width:80%;
+            left:30px;
+            top:-220px;
+            position:relative;
+            z-index:2;
+            padding:20px;
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- head -->
+    <div class="container">
+        <div class="row hoofdtitel">
+            <!-- begin textbox 1.1 -->
+            <div class="col">
+                <h1>Relatieve positioning met CSS</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <!-- begin linker hoofdkolom -->
+            <div class="col hoofdkolom" style="background-color:#43AA8B;color:white">
+                <p>Dit is de linker hoofdkolom</p>
+                <div class="">
+                    <div class="kleurvlak"></div>
+                    <div class="tekstvlak">
+                            <p><strong>Dit witte vlak heeft de eigenschap 'position:relative'. Op deze manier kan de positie van het element aangepast worden, relatief ten opzichte van de natuurlijke positie van het element in de flow. </strong>(hier schuiven we het vlak wat op naar rechts en schuiven we het naar boven, over het rode vlak. Bekijk de html en css code van deze pagina via de inspector)</p>
+                            <p>Proin non ligula eros. Praesent congue varius hendrerit. Donec condimentum massa et auctor tincidunt. Nam congue lectus lectus, ut ullamcorper sapien posuere ut. Suspendisse nisi lacus, cursus vitae pellentesque non, volutpat quis nulla.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <!-- einde col -->
+
+            <!-- begin rechter hoofdkolom, hierbinnen zitten 2 nieuwe kolommen -->
+            <div class="col hoofdkolom" style="background-color:#B2B09B;">
+               <p>Dit is de rechter hoofdkolom</p>
+               <div class="row">
+                   <div class="col genest" style="background-color: #254441">
+                       <h4>Dit is een eerste geneste kolom </h4>
+                       <p>Morbi id purus urna. Curabitur suscipit nisi nec euismod tincidunt. Duis dolor risus, tempor sed consequat et, accumsan eget odio.</p>
+                   </div>
+                   <div class="col genest" style="background-color: #EF3054">
+                       <h4>Dit is een tweede geneste kolom </h4>
+                       <p>Morbi id purus urna. Curabitur suscipit nisi nec euismod tincidunt. Duis dolor risus, tempor sed consequat et, accumsan eget odio.</p>
+                   </div>
+               </div>
+            </div>
+            <!-- einde col -->
+        </div>
+        <!-- einde row -->
+    </div>
+    <!-- einde container -->
+
+</body>
+
+</html>
